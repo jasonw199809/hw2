@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+
+function setup() {
+  createCanvas(400, 400);
+}
+var ballheight = (0)
+var ballChangedY = (5)
+
+function draw() {
+  background(100);
+	fill(200, 200, 0)
+	ellipse(200, ballheight,150);
+	ballheight = ballheight + ballChangedY;
+
+    if (ballheight >= width) {
+	ballChangedY = -5;
+	}
+
+	if (ballheight <= 0) {
+		ballChangedY = 5;
+	}
+
+
+	}
+
+
+
+</script>
+</body>
+</html>
