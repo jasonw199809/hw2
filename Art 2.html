@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+
+function setup() {
+  createCanvas(400, 400);
+}
+function draw() {
+ var leftLineX = 80;
+ var rightLineX = 300;
+ var topLineY = 160;
+ var middleLineY = 320;
+ var bottomLineY = 360;
+	background(300);
+	fill(2, 50, 100);// Pink
+	noStroke ();
+	strokeCap(SQUARE);
+	rect(leftLineX, 0, middleLineY, middleLineY);
+	fill(0, 128, 255);// Blue
+	fill(255, 255, 0)
+	rect(rightLineX, 330, 100, 400)//yellow
+	stroke(0)
+	strokeWeight(20)
+	line(0, middleLineY, 400, middleLineY)
+	line(80, 0, 80, 320)
+	line(rightLineX, middleLineY, rightLineX, 400)
+	strokeWeight(15)// Left Horizontal
+	//line(rightLineX, bottomLineY, 400, bottomLineY)
+	//line(0, 160, 0, 160)
+}
+</script>
+</body>
+</html>
